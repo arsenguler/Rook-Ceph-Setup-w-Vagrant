@@ -1,5 +1,5 @@
-##Hello everyone, I'm Arsen. You can follow this guide to setup a simple, 4-node(1 master and 3 workers) Kubernetes cluster and
-##install Rook-Ceph on top of it.
+## Hello everyone, I'm Arsen. You can follow this guide to setup a simple, 4-node(1 master and 3 workers) Kubernetes cluster and
+## install Rook-Ceph on top of it.
 
 This was tested on Ubuntu 22.04.1 LTS.
 * Requirements
@@ -9,7 +9,7 @@ virtualbox
 at least 7GB of RAM and 50GB of disk space
 ```
 
-##KUBERNETES CLUSTER SETUP
+## KUBERNETES CLUSTER SETUP
 
 Thanks to Mehmet A. Baykara, I followed his post(https://baykara.medium.com/setup-own-kubernetes-cluster-via-virtualbox-99a82605bfcc)
 to setup my own K8s cluster but I had to make some changes in order to setup Rook-Ceph on top of it. So, if you want to follow
@@ -86,7 +86,7 @@ status' are healthy.
 kubectl get cs
 ```
 
-##ROOK-CEPH SETUP
+## ROOK-CEPH SETUP
 
 If the k8s cluster setup was successful, setting up rook-ceph on top of it should be quite straight-forward.
 You can follow the official guide(https://rook.io/docs/rook/latest/Getting-Started/quickstart/) if you want
@@ -128,9 +128,9 @@ kubectl -n rook-ceph exec -it deploy/rook-ceph-tools -- bash
 ceph status
 ```
 
-##If something goes wrong, it might be helpful to correct the following:
+## If something goes wrong, it might be helpful to correct the following:
 
-###Check if VM hostnames are ok in each VM:
+### Check if VM hostnames are ok in each VM:
 ```
 sudo vim /etc/hosts
 ```
@@ -140,7 +140,7 @@ It should be as the following:
 192.168.56.15  worker-2 worker-2
 192.168.56.16  worker-3 worker-3
 
-###Make sure you can ssh into localhost in your physical mahcine.
+### Make sure you can ssh into localhost in your physical mahcine.
 ```
 ssh root@localhost
 ```
@@ -154,7 +154,7 @@ Afterwards copy your pub-key by running:
 ssh-copy-id root@localhost
 ```
 
-###Make sure you have a separate 10GB raw disk(probably named "sdc) by running:
+### Make sure you have a separate 10GB raw disk(probably named "sdc) by running:
 ```
 lsblk
 ```
