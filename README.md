@@ -1,5 +1,4 @@
-## Hello everyone, I'm Arsen. You can follow this guide to setup a simple, 4-node(1 master and 3 workers) Kubernetes cluster and
-## install Rook-Ceph on top of it.
+## Hello everyone, I'm Arsen. You can follow this guide to setup a simple, 4-node(1 master and 3 workers) Kubernetes cluster and install Rook-Ceph on top of it.
 
 This was tested on Ubuntu 22.04.1 LTS.
 * Requirements
