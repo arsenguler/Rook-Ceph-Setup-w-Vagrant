@@ -10,7 +10,7 @@ at least 7GB of RAM and 50GB of disk space
 
 ## KUBERNETES CLUSTER SETUP
 
-Thanks to Mehmet A. Baykara, I followed his post(https://baykara.medium.com/setup-own-kubernetes-cluster-via-virtualbox-99a82605bfcc)
+Thanks to Mehmet A. Baykara, I followed his post (https://baykara.medium.com/setup-own-kubernetes-cluster-via-virtualbox-99a82605bfcc)
 to setup my own K8s cluster but I had to make some changes in order to setup Rook-Ceph on top of it. So, if you want to follow
 his guide and make your own configurations, you can visit his guide to setup your K8s cluster or you can directly follow this guide.
 
